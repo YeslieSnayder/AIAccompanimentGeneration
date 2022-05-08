@@ -424,7 +424,7 @@ def main(filename):
 if __name__ == '__main__':
     if len(sys.argv) != 2:
         print('Error: you should provide the name of the MIDI file.')
-        print('Usage: `python3 AndreyKuzmickiy.py input1.mid`')
+        print('Usage: `python3 AndreyKuzmickiy.py AndreyKuzmickiyOutput1.mid`')
         sys.exit(1)
     midfile = sys.argv[1]
     if midfile.split('.')[-1] != 'mid':

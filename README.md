@@ -28,7 +28,7 @@ You must install the following libraries before start:
 **Note:** you should be at the same path with file `AndreyKuzmickiy.py`. Be sure that input files exist.
 
 ```bash
-python AndreyKuzmickiy.py input1.mid
+python AndreyKuzmickiy.py AndreyKuzmickiyOutput1.mid
 ```
 
 - If you are using **IDE**, e.g. *PyCharm*, then just open the file: `AndreyKuzmickiy.py` and launch it using IDE tool.
