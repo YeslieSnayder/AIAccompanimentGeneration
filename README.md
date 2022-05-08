@@ -1,4 +1,4 @@
-# Introduction to AI (Assignment 1)
+# Introduction to AI (Assignment 2)
 
 # Description
 
@@ -35,6 +35,12 @@ python AndreyKuzmickiy.py input1.mid
 
 **Note:** you should configure environment to launch program with input parameter (e.g. input1.mid)
 
+### Output file creation
+
+Output file will be located in **output/** directory. If this directory does not exists, then the program will create it. The full relative path of the output file will be: */output/param*, where *param* is input parameter for the program.
+
+For example, for the following command: `python AndreyKuzmickiy.py input/input1.mid`  the following directory will be created: `/output/input/input1.mid`. The following output file will contain initial melody with accompaniment.
+
 # Algorithm flow
 
 You are allowed to change the following parameters (in the program file):
@@ -55,10 +61,6 @@ You are allowed to change the following parameters (in the program file):
     3. Newly generated population appends to the best accompaniments, calculates fitness for each accompaniment for the population, sorts it and new best population of given size is saved (another part is discarded).
 3. From the population the program takes the best accompaniment (in terms of fitness function) and converts it to MIDI file.
 4. Concatenate both initial melody and generated accompaniment and creates the output MIDI file.
-
-`**!!!`Important`!!!`:** Output file will be located in **output/** directory. If this directory does not exists, then the program will create it. The full relative path of the output file will be: */output/param*, where *param* is input parameter for the program.
-
-For example, for the following command: `python AndreyKuzmickiy.py input/input1.mid`  the following directory will be created: `/output/input/input1.mid`. The following output file will contain initial melody with accompaniment.
 
 ### Crossover
 
