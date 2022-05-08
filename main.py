@@ -1,5 +1,7 @@
 import math
 import os
+import sys
+
 import mido
 import numpy as np
 
@@ -391,7 +393,7 @@ def main(filename):
     """
     Main function
     """
-    mid = mido.MidiFile(f'input/{filename}')
+    mid = mido.MidiFile(filename)
     messages = []
     meta = []
     tempo = 0
@@ -420,7 +422,12 @@ def main(filename):
 
 
 if __name__ == '__main__':
-    main('barbiegirl_mono.mid')
-    main('input1.mid')
-    main('input2.mid')
-    main('input3.mid')
+    if len(sys.argv) != 2:
+        print('Error: you should provide the name of the MIDI file.')
+        print('Usage: `python3 AndreyKuzmickiy.py input1.mid`')
+        sys.exit(1)
+    midfile = sys.argv[1]
+    if midfile.split('.')[-1] != 'mid':
+        print('Error: you should provide MIDI file (file.mid)')
+        sys.exit(1)
+    main(midfile)
